@@ -1,569 +1,936 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="EMMU TECH - Art, Education, Technology and AI">
+
+  <meta
+    name="description"
+    content="EMMU TECH - Art, Education, Technology and AI"
+  >
+
   <title>EMMU TECH | Create • Learn • Innovate</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header class="navbar">
+  <!-- ================= NAVBAR ================= -->
 
-  <div class="brand">
-    <img src="logo.jpg" alt="NAHS Logo">
-    <div>
-      <strong>EMMU <span>TECH</span></strong>
-      <small>NAHS</small>
-    </div>
-  </div>
+  <header class="navbar">
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#art">Art</a>
-    <a href="#education">Education</a>
-    <a href="#tech">Tech</a>
-    <a href="#ai">AI</a>
-    <a href="#papers">Papers</a>
-    <a href="#videos">Videos</a>
-    <a href="#about">About</a>
-  </nav>
+    <div class="brand">
 
-  <button id="themeBtn">🌙</button>
+      <img
+        src="WIN_20260827_21_48_05_Pro.jpg"
+        alt="EMMU TECH Logo"
+      >
 
-</header>
+      <div>
+        <strong>
+          EMMU <span>TECH</span>
+        </strong>
 
-
-<section id="home" class="hero">
-
-  <div class="hero-content">
-
-    <img src="logo.jpg" class="hero-logo" alt="NAHS Logo">
-
-    <p class="small-title">WELCOME TO</p>
-
-    <h1>EMMU <span>TECH</span></h1>
-
-    <h2>🎨 Create • 📚 Learn • 💻 Innovate</h2>
-
-    <p>
-      Discover amazing art, useful education,
-      exciting technology and artificial intelligence.
-    </p>
-
-    <div class="buttons">
-      <a href="#art" class="btn">🎨 Explore Art</a>
-      <a href="#tech" class="btn second">💻 Explore Tech</a>
-    </div>
-
-  </div>
-
-</section>
-
-
-<section class="search-section">
-
-  <p class="category">🔎 SEARCH</p>
-
-  <h2>Find Something</h2>
-
-  <input
-    id="searchBox"
-    type="text"
-    placeholder="Search Art, Education, Tech or AI..."
-  >
-
-  <p id="searchResult"></p>
-
-</section>
-
-
-<!-- ART -->
-
-<section id="art" class="section">
-
-  <p class="category">🎨 CREATIVE WORLD</p>
-
-  <h2>Art</h2>
-
-  <div class="cards">
-
-    <article class="card searchable">
-      <img src="Capture.PNG" class="art-image" alt="My Artwork">
-
-      <h3>Drawing</h3>
-
-      <p>
-        Learn simple and interesting drawing techniques.
-      </p>
-
-      <button onclick="showMessage('Drawing tutorials are coming soon!')">
-        Explore
-      </button>
-    </article>
-
-
-    <article class="card searchable">
-
-      <div class="icon">🎨</div>
-
-      <h3>Creative Art</h3>
-
-      <p>
-        Turn simple ideas into beautiful artwork.
-      </p>
-
-      <button onclick="showMessage('Creative art projects are coming soon!')">
-        Explore
-      </button>
-
-    </article>
-
-
-    <article class="card searchable">
-
-      <div class="icon">🖼️</div>
-
-      <h3>Gallery</h3>
-
-      <p>
-        A place to showcase amazing artwork.
-      </p>
-
-      <button onclick="showMessage('Gallery coming soon!')">
-        Explore
-      </button>
-
-    </article>
-
-  </div>
-
-</section>
-
-
-<!-- EDUCATION -->
-
-<section id="education" class="section alternate">
-
-  <p class="category">📚 KEEP LEARNING</p>
-
-  <h2>Education</h2>
-
-  <div class="cards">
-
-    <article class="card searchable">
-
-      <div class="icon">🧪</div>
-
-      <h3>Science</h3>
-
-      <p>
-        Interesting science facts explained simply.
-      </p>
-
-      <button onclick="showMessage('Science lessons coming soon!')">
-        Learn
-      </button>
-
-    </article>
-
-
-    <article class="card searchable">
-
-      <div class="icon">🧠</div>
-
-      <h3>Study Tips</h3>
-
-      <p>
-        Simple ideas to make learning easier.
-      </p>
-
-      <button onclick="showMessage('Study tips coming soon!')">
-        Learn
-      </button>
-
-    </article>
-
-
-    <article class="card searchable">
-
-      <div class="icon">🔢</div>
-
-      <h3>Math</h3>
-
-      <p>
-        Fun tricks and challenges for students.
-      </p>
-
-      <button onclick="showMessage('Math challenges coming soon!')">
-        Learn
-      </button>
-
-    </article>
-
-  </div>
-
-</section>
-
-
-<!-- TECHNOLOGY -->
-
-<section id="tech" class="section">
-
-  <p class="category">💻 BUILD THE FUTURE</p>
-
-  <h2>Technology</h2>
-
-  <div class="cards">
-
-    <article class="card searchable">
-      <div class="icon">🤖</div>
-      <h3>Arduino</h3>
-      <p>Discover Arduino projects and electronics.</p>
-      <button onclick="showMessage('Arduino projects coming soon!')">
-        Explore
-      </button>
-    </article>
-
-
-    <article class="card searchable">
-      <div class="icon">📡</div>
-      <h3>ESP32</h3>
-      <p>Explore ESP32 and connected projects.</p>
-      <button onclick="showMessage('ESP32 projects coming soon!')">
-        Explore
-      </button>
-    </article>
-
-
-    <article class="card searchable">
-      <div class="icon">📟</div>
-      <h3>Sensors</h3>
-      <p>Learn about distance, light, temperature and other sensors.</p>
-      <button onclick="showMessage('Sensor projects coming soon!')">
-        Explore
-      </button>
-    </article>
-
-
-    <article class="card searchable">
-      <div class="icon">⚡</div>
-      <h3>Electrical Equipment</h3>
-      <p>Learn about electronics and electrical components.</p>
-      <button onclick="showMessage('Electrical information coming soon!')">
-        Explore
-      </button>
-    </article>
-
-
-    <article class="card searchable">
-      <div class="icon">🌐</div>
-      <h3>Web Development</h3>
-      <p>Learn HTML, CSS and JavaScript.</p>
-      <button onclick="showMessage('Web development tutorials coming soon!')">
-        Explore
-      </button>
-    </article>
-
-
-    <article class="card searchable">
-      <div class="icon">🛠️</div>
-      <h3>Project Builder</h3>
-      <p>Learn how technology projects are built.</p>
-      <button onclick="showMessage('Project Builder coming soon!')">
-        Start
-      </button>
-    </article>
-
-  </div>
-
-</section>
-
-
-<!-- AI -->
-
-<section id="ai" class="section alternate">
-
-  <p class="category">🤖 ARTIFICIAL INTELLIGENCE</p>
-
-  <h2>AI</h2>
-
-  <div class="cards">
-
-    <article class="card searchable">
-      <div class="icon">🤖</div>
-      <h3>AI Learning</h3>
-      <p>Learn the basics of artificial intelligence.</p>
-      <button onclick="showMessage('AI lessons coming soon!')">
-        Learn
-      </button>
-    </article>
-
-
-    <article class="card searchable">
-      <div class="icon">✍️</div>
-      <h3>AI Writing</h3>
-      <p>Learn about AI-assisted writing.</p>
-      <button onclick="showMessage('AI Writing section coming soon!')">
-        Explore
-      </button>
-    </article>
-
-
-    <article class="card searchable">
-      <div class="icon">🎨</div>
-      <h3>AI Art</h3>
-      <p>Explore AI-assisted creative ideas.</p>
-      <button onclick="showMessage('AI Art section coming soon!')">
-        Explore
-      </button>
-    </article>
-
-
-    <article class="card searchable">
-      <div class="icon">🎬</div>
-      <h3>AI Video</h3>
-      <p>Learn about AI-assisted video creation.</p>
-      <button onclick="showMessage('AI Video section coming soon!')">
-        Explore
-      </button>
-    </article>
-
-  </div>
-
-</section>
-
-
-<!-- PREVIOUS 5 YEARS -->
-
-<section id="papers" class="section">
-
-  <p class="category">📄 STUDY & PRACTICE</p>
-
-  <h2>Previous 5 Years</h2>
-
-  <div class="paper-grid">
-
-    <article class="paper-box">
-      <div class="icon">🏫</div>
-      <h3>CBSE</h3>
-      <p>Previous-year examination resources.</p>
-
-      <a
-        href="https://www.cbse.gov.in/cbsenew/question-paper.html"
-        target="_blank"
-        rel="noopener"
-        class="paper-btn">
-        📥 CBSE Papers
-      </a>
-    </article>
-
-
-    <article class="paper-box">
-      <div class="icon">📚</div>
-      <h3>JKBOSE</h3>
-      <p>JKBOSE examination resources.</p>
-
-      <a
-        href="https://jkbose.nic.in/"
-        target="_blank"
-        rel="noopener"
-        class="paper-btn">
-        📥 JKBOSE
-      </a>
-    </article>
-
-
-    <article class="paper-box">
-      <div class="icon">🧬</div>
-      <h3>NEET</h3>
-      <p>NEET examination information.</p>
-
-      <a
-        href="https://www.nta.ac.in/"
-        target="_blank"
-        rel="noopener"
-        class="paper-btn">
-        📥 NTA
-      </a>
-    </article>
-
-
-    <article class="paper-box">
-      <div class="icon">⚙️</div>
-      <h3>JEE</h3>
-      <p>JEE examination information.</p>
-
-      <a
-        href="https://www.nta.ac.in/"
-        target="_blank"
-        rel="noopener"
-        class="paper-btn">
-        📥 NTA
-      </a>
-    </article>
-
-  </div>
-
-
-  <div class="years-box">
-
-    <h3>📅 Previous 5 Years</h3>
-
-    <div class="year-buttons">
-
-      <button onclick="selectYear(2025)">2025</button>
-      <button onclick="selectYear(2024)">2024</button>
-      <button onclick="selectYear(2023)">2023</button>
-      <button onclick="selectYear(2022)">2022</button>
-      <button onclick="selectYear(2021)">2021</button>
+        <small>CREATE • LEARN • INNOVATE</small>
+      </div>
 
     </div>
 
-    <p id="selectedYear">
-      Select a year.
+
+    <nav>
+
+      <a href="#home">Home</a>
+      <a href="#art">Art</a>
+      <a href="#education">Education</a>
+      <a href="#tech">Tech</a>
+      <a href="#ai">AI</a>
+      <a href="#papers">5 Years</a>
+      <a href="#videos">Videos</a>
+      <a href="#about">About</a>
+
+    </nav>
+
+
+    <button id="themeBtn" aria-label="Change theme">
+      🌙
+    </button>
+
+  </header>
+
+
+  <!-- ================= HOME ================= -->
+
+  <section id="home" class="hero">
+
+    <div class="hero-content">
+
+      <img
+        src="WIN_20260827_21_48_05_Pro.jpg"
+        class="hero-logo"
+        alt="EMMU TECH Logo"
+      >
+
+      <p class="small-title">
+        WELCOME TO
+      </p>
+
+      <h1>
+        EMMU <span>TECH</span>
+      </h1>
+
+      <h2>
+        🎨 Create • 📚 Learn • 💻 Innovate
+      </h2>
+
+      <p class="hero-description">
+        Discover amazing art, useful education,
+        exciting technology and artificial intelligence.
+      </p>
+
+
+      <div class="buttons">
+
+        <a href="#art" class="btn">
+          🎨 Explore Art
+        </a>
+
+        <a href="#tech" class="btn second">
+          💻 Explore Tech
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= SEARCH ================= -->
+
+  <section class="search-section">
+
+    <p class="category">
+      🔎 SEARCH
     </p>
 
-  </div>
+    <h2>
+      Find Something
+    </h2>
 
-</section>
+    <input
+      type="text"
+      id="searchBox"
+      placeholder="Search Art, Education, Tech or AI..."
+    >
+
+    <p id="searchResult"></p>
+
+  </section>
 
 
-<!-- VIDEOS -->
+  <!-- ================= ART ================= -->
 
-<section id="videos" class="section alternate">
+  <section id="art" class="section">
 
-  <p class="category">▶️ WATCH & LEARN</p>
+    <p class="category">
+      🎨 CREATIVE WORLD
+    </p>
 
-  <h2>Videos</h2>
+    <h2>
+      Art
+    </h2>
 
-  <div class="video-box">
 
-    <div class="play">▶</div>
+    <div class="cards">
 
-    <h3>EMMU TECH YouTube Channel</h3>
+
+      <article class="card searchable">
+
+        <img
+          src="WIN_20260827_21_48_05_Pro.jpg"
+          class="art-image"
+          alt="Artwork"
+        >
+
+        <h3>
+          Drawing
+        </h3>
+
+        <p>
+          Learn simple and interesting drawing techniques.
+        </p>
+
+        <button
+          onclick="showMessage('Drawing tutorials are coming soon!')"
+        >
+          Explore
+        </button>
+
+      </article>
+
+
+      <article class="card searchable">
+
+        <div class="icon">
+          🎨
+        </div>
+
+        <h3>
+          Creative Art
+        </h3>
+
+        <p>
+          Turn simple ideas into beautiful artwork.
+        </p>
+
+        <button
+          onclick="showMessage('Creative art projects are coming soon!')"
+        >
+          Explore
+        </button>
+
+      </article>
+
+
+      <article class="card searchable">
+
+        <div class="icon">
+          🖼️
+        </div>
+
+        <h3>
+          Gallery
+        </h3>
+
+        <p>
+          A place to showcase amazing artwork.
+        </p>
+
+        <button
+          onclick="showMessage('Gallery coming soon!')"
+        >
+          Explore
+        </button>
+
+      </article>
+
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= EDUCATION ================= -->
+
+  <section id="education" class="section alternate">
+
+    <p class="category">
+      📚 KEEP LEARNING
+    </p>
+
+    <h2>
+      Education
+    </h2>
+
+
+    <div class="cards">
+
+
+      <article class="card searchable">
+
+        <div class="icon">
+          🧪
+        </div>
+
+        <h3>
+          Science
+        </h3>
+
+        <p>
+          Interesting science facts explained simply.
+        </p>
+
+        <button
+          onclick="showMessage('Science lessons coming soon!')"
+        >
+          Learn
+        </button>
+
+      </article>
+
+
+      <article class="card searchable">
+
+        <div class="icon">
+          🧠
+        </div>
+
+        <h3>
+          Study Tips
+        </h3>
+
+        <p>
+          Simple ideas to make learning easier.
+        </p>
+
+        <button
+          onclick="showMessage('Study tips coming soon!')"
+        >
+          Learn
+        </button>
+
+      </article>
+
+
+      <article class="card searchable">
+
+        <div class="icon">
+          🔢
+        </div>
+
+        <h3>
+          Mathematics
+        </h3>
+
+        <p>
+          Fun tricks and challenges for students.
+        </p>
+
+        <button
+          onclick="showMessage('Math challenges coming soon!')"
+        >
+          Learn
+        </button>
+
+      </article>
+
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= TECHNOLOGY ================= -->
+
+  <section id="tech" class="section">
+
+    <p class="category">
+      💻 BUILD THE FUTURE
+    </p>
+
+    <h2>
+      Technology
+    </h2>
+
+
+    <div class="cards">
+
+
+      <article class="card searchable">
+
+        <div class="icon">
+          🤖
+        </div>
+
+        <h3>
+          Arduino
+        </h3>
+
+        <p>
+          Discover Arduino projects and electronics.
+        </p>
+
+        <button
+          onclick="showMessage('Arduino projects coming soon!')"
+        >
+          Explore
+        </button>
+
+      </article>
+
+
+      <article class="card searchable">
+
+        <div class="icon">
+          📡
+        </div>
+
+        <h3>
+          ESP32
+        </h3>
+
+        <p>
+          Explore ESP32 and connected projects.
+        </p>
+
+        <button
+          onclick="showMessage('ESP32 projects coming soon!')"
+        >
+          Explore
+        </button>
+
+      </article>
+
+
+      <article class="card searchable">
+
+        <div class="icon">
+          📟
+        </div>
+
+        <h3>
+          Sensors
+        </h3>
+
+        <p>
+          Learn about electronics sensors and projects.
+        </p>
+
+        <button
+          onclick="showMessage('Sensor projects coming soon!')"
+        >
+          Explore
+        </button>
+
+      </article>
+
+
+      <article class="card searchable">
+
+        <div class="icon">
+          ⚡
+        </div>
+
+        <h3>
+          Electronics
+        </h3>
+
+        <p>
+          Learn about electronic components and circuits.
+        </p>
+
+        <button
+          onclick="showMessage('Electronics information coming soon!')"
+        >
+          Explore
+        </button>
+
+      </article>
+
+
+      <article class="card searchable">
+
+        <div class="icon">
+          🌐
+        </div>
+
+        <h3>
+          Web Development
+        </h3>
+
+        <p>
+          Learn HTML, CSS and JavaScript.
+        </p>
+
+        <button
+          onclick="showMessage('Web development tutorials coming soon!')"
+        >
+          Explore
+        </button>
+
+      </article>
+
+
+      <article class="card searchable">
+
+        <div class="icon">
+          🛠️
+        </div>
+
+        <h3>
+          Project Builder
+        </h3>
+
+        <p>
+          Learn how technology projects are created.
+        </p>
+
+        <button
+          onclick="showMessage('Project Builder coming soon!')"
+        >
+          Start
+        </button>
+
+      </article>
+
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= AI ================= -->
+
+  <section id="ai" class="section alternate">
+
+    <p class="category">
+      🤖 ARTIFICIAL INTELLIGENCE
+    </p>
+
+    <h2>
+      AI
+    </h2>
+
+
+    <div class="cards">
+
+
+      <article class="card searchable">
+
+        <div class="icon">
+          🤖
+        </div>
+
+        <h3>
+          AI Learning
+        </h3>
+
+        <p>
+          Learn the basics of artificial intelligence.
+        </p>
+
+        <button
+          onclick="showMessage('AI lessons coming soon!')"
+        >
+          Learn
+        </button>
+
+      </article>
+
+
+      <article class="card searchable">
+
+        <div class="icon">
+          ✍️
+        </div>
+
+        <h3>
+          AI Writing
+        </h3>
+
+        <p>
+          Learn about AI-assisted writing.
+        </p>
+
+        <button
+          onclick="showMessage('AI Writing coming soon!')"
+        >
+          Explore
+        </button>
+
+      </article>
+
+
+      <article class="card searchable">
+
+        <div class="icon">
+          🎨
+        </div>
+
+        <h3>
+          AI Art
+        </h3>
+
+        <p>
+          Explore AI-assisted creative ideas.
+        </p>
+
+        <button
+          onclick="showMessage('AI Art coming soon!')"
+        >
+          Explore
+        </button>
+
+      </article>
+
+
+      <article class="card searchable">
+
+        <div class="icon">
+          🎬
+        </div>
+
+        <h3>
+          AI Video
+        </h3>
+
+        <p>
+          Learn about AI-assisted video creation.
+        </p>
+
+        <button
+          onclick="showMessage('AI Video coming soon!')"
+        >
+          Explore
+        </button>
+
+      </article>
+
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= PREVIOUS 5 YEARS ================= -->
+
+  <section id="papers" class="section">
+
+    <p class="category">
+      📄 STUDY & PRACTICE
+    </p>
+
+    <h2>
+      Previous 5 Years
+    </h2>
+
+
+    <div class="paper-grid">
+
+
+      <article class="paper-box">
+
+        <div class="icon">
+          🏫
+        </div>
+
+        <h3>
+          CBSE
+        </h3>
+
+        <p>
+          Previous-year examination resources.
+        </p>
+
+        <a
+          href="https://www.cbse.gov.in/cbsenew/question-paper.html"
+          target="_blank"
+          rel="noopener"
+          class="paper-btn"
+        >
+          📥 CBSE Papers
+        </a>
+
+      </article>
+
+
+      <article class="paper-box">
+
+        <div class="icon">
+          📚
+        </div>
+
+        <h3>
+          JKBOSE
+        </h3>
+
+        <p>
+          JKBOSE examination resources.
+        </p>
+
+        <a
+          href="https://jkbose.nic.in/"
+          target="_blank"
+          rel="noopener"
+          class="paper-btn"
+        >
+          📥 JKBOSE
+        </a>
+
+      </article>
+
+
+      <article class="paper-box">
+
+        <div class="icon">
+          🧬
+        </div>
+
+        <h3>
+          NEET
+        </h3>
+
+        <p>
+          NEET examination information.
+        </p>
+
+        <a
+          href="https://www.nta.ac.in/"
+          target="_blank"
+          rel="noopener"
+          class="paper-btn"
+        >
+          📥 NTA
+        </a>
+
+      </article>
+
+
+      <article class="paper-box">
+
+        <div class="icon">
+          ⚙️
+        </div>
+
+        <h3>
+          JEE
+        </h3>
+
+        <p>
+          JEE examination information.
+        </p>
+
+        <a
+          href="https://www.nta.ac.in/"
+          target="_blank"
+          rel="noopener"
+          class="paper-btn"
+        >
+          📥 NTA
+        </a>
+
+      </article>
+
+
+    </div>
+
+
+    <div class="years-box">
+
+      <h3>
+        📅 Select a Year
+      </h3>
+
+
+      <div class="year-buttons">
+
+        <button onclick="selectYear(2025)">
+          2025
+        </button>
+
+        <button onclick="selectYear(2024)">
+          2024
+        </button>
+
+        <button onclick="selectYear(2023)">
+          2023
+        </button>
+
+        <button onclick="selectYear(2022)">
+          2022
+        </button>
+
+        <button onclick="selectYear(2021)">
+          2021
+        </button>
+
+      </div>
+
+
+      <p id="selectedYear">
+        Select a year.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= VIDEOS ================= -->
+
+  <section id="videos" class="section alternate">
+
+    <p class="category">
+      ▶️ WATCH & LEARN
+    </p>
+
+    <h2>
+      Videos
+    </h2>
+
+
+    <div class="video-box">
+
+      <div class="play">
+        ▶
+      </div>
+
+      <h3>
+        EMMU TECH YouTube Channel
+      </h3>
+
+      <p>
+        Watch videos from the YouTube channel.
+      </p>
+
+
+      <a
+        href="https://www.youtube.com/@SheerazAhmadBhat-qs7wf"
+        target="_blank"
+        rel="noopener"
+        class="youtube-btn"
+      >
+        ▶️ Visit YouTube Channel
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= ABOUT / CONTACT ================= -->
+
+  <section id="about" class="section">
+
+    <p class="category">
+      📞 CONTACT
+    </p>
+
+    <h2>
+      EMMU TECH
+    </h2>
+
+
+    <div class="contact-grid">
+
+
+      <a
+        href="https://www.youtube.com/@SheerazAhmadBhat-qs7wf"
+        target="_blank"
+        rel="noopener"
+        class="contact-card"
+      >
+
+        <div>
+          ▶️
+        </div>
+
+        <h3>
+          YouTube
+        </h3>
+
+        <p>
+          Sheeraz Ahmad Bhat
+        </p>
+
+      </a>
+
+
+      <a
+        href="https://www.instagram.com/emaan635/"
+        target="_blank"
+        rel="noopener"
+        class="contact-card"
+      >
+
+        <div>
+          📸
+        </div>
+
+        <h3>
+          Instagram
+        </h3>
+
+        <p>
+          @emaan635
+        </p>
+
+      </a>
+
+
+      <a
+        href="mailto:imaanafzalbhat@gmail.com"
+        class="contact-card"
+      >
+
+        <div>
+          📧
+        </div>
+
+        <h3>
+          Email
+        </h3>
+
+        <p>
+          imaanafzalbhat@gmail.com
+        </p>
+
+      </a>
+
+
+    </div>
+
+
+    <div class="about-box">
+
+      <p>
+        EMMU TECH is a creative platform combining
+        <strong>Art</strong>,
+        <strong>Education</strong>,
+        <strong>Technology</strong>
+        and <strong>AI</strong>.
+      </p>
+
+      <p>
+        🎨 Create • 📚 Learn • 💻 Innovate
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer>
+
+    <img
+      src="WIN_20260827_21_48_05_Pro.jpg"
+      alt="EMMU TECH Logo"
+    >
+
+    <h3>
+      EMMU <span>TECH</span>
+    </h3>
 
     <p>
-      Watch videos from the channel.
+      🎨 Art • 📚 Education • 💻 Technology • 🤖 AI
     </p>
 
-    <a
-      href="https://www.youtube.com/@SheerazAhmadBhat-qs7wf"
-      target="_blank"
-      rel="noopener"
-      class="youtube-btn">
+    <p class="copyright">
+      © <span id="year"></span>
+      EMMU TECH. All rights reserved.
+    </p>
 
-      ▶️ Visit YouTube Channel
-
-    </a>
-
-  </div>
-
-</section>
+  </footer>
 
 
-<!-- CONTACT -->
+  <!-- ================= MESSAGE ================= -->
 
-<section id="about" class="section">
+  <div id="messageBox" class="message-box">
 
-  <p class="category">📞 CONTACT</p>
+    <span id="messageText"></span>
 
-  <h2>EMMU TECH</h2>
-
-  <div class="contact-grid">
-
-    <a
-      href="https://www.youtube.com/@SheerazAhmadBhat-qs7wf"
-      target="_blank"
-      rel="noopener"
-      class="contact-card">
-
-      <div>▶️</div>
-      <h3>YouTube</h3>
-      <p>@SheerazAhmadBhat-qs7wf</p>
-
-    </a>
-
-
-    <a
-      href="https://www.instagram.com/emaan635/"
-      target="_blank"
-      rel="noopener"
-      class="contact-card">
-
-      <div>📸</div>
-      <h3>Instagram</h3>
-      <p>@emaan635</p>
-
-    </a>
-
-
-    <a
-      href="mailto:imaanafzalbhat@gmail.com"
-      class="contact-card">
-
-      <div>📧</div>
-      <h3>Email</h3>
-      <p>imaanafzalbhat@gmail.com</p>
-
-    </a>
+    <button onclick="closeMessage()">
+      ✕
+    </button>
 
   </div>
 
 
-  <div class="about-box">
-
-    <p>
-      EMMU TECH is a creative platform combining
-      <strong>Art</strong>,
-      <strong>Education</strong>,
-      <strong>Technology</strong>
-      and <strong>AI</strong>.
-    </p>
-
-    <p>
-      🎨 Create • 📚 Learn • 💻 Innovate
-    </p>
-
-  </div>
-
-</section>
-
-
-<!-- FOOTER -->
-
-<footer>
-
-  <img src="logo.jpg" alt="NAHS Logo">
-
-  <h3>EMMU <span>TECH</span></h3>
-
-  <p>
-    🎨 Art • 📚 Education • 💻 Technology • 🤖 AI
-  </p>
-
-  <p class="copyright">
-    © <span id="year"></span> EMMU TECH.
-    All rights reserved.
-  </p>
-
-</footer>
-
-
-<!-- MESSAGE -->
-
-<div id="messageBox" class="message-box">
-
-  <span id="messageText"></span>
-
-  <button onclick="closeMessage()">✕</button>
-
-</div>
-
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>
