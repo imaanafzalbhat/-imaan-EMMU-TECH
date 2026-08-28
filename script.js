@@ -1,12 +1,13 @@
-/* ===============================
+/* =====================================
    EMMU TECH JAVASCRIPT
-================================ */
+===================================== */
 
 
-/* DARK MODE */
+/* ================= DARK MODE ================= */
 
 const themeBtn =
   document.getElementById("themeBtn");
+
 
 if (localStorage.getItem("theme") === "dark") {
 
@@ -17,28 +18,37 @@ if (localStorage.getItem("theme") === "dark") {
 }
 
 
-themeBtn.addEventListener("click", () => {
+themeBtn.addEventListener("click", function () {
 
   document.body.classList.toggle("dark");
 
-  if (document.body.classList.contains("dark")) {
+
+  if (
+    document.body.classList.contains("dark")
+  ) {
 
     themeBtn.textContent = "☀️";
 
-    localStorage.setItem("theme","dark");
+    localStorage.setItem(
+      "theme",
+      "dark"
+    );
 
   } else {
 
     themeBtn.textContent = "🌙";
 
-    localStorage.setItem("theme","light");
+    localStorage.setItem(
+      "theme",
+      "light"
+    );
 
   }
 
 });
 
 
-/* SEARCH */
+/* ================= SEARCH ================= */
 
 const searchBox =
   document.getElementById("searchBox");
@@ -46,68 +56,88 @@ const searchBox =
 const cards =
   document.querySelectorAll(".searchable");
 
-searchBox.addEventListener("input", () => {
 
-  const search =
-    searchBox.value.toLowerCase().trim();
+searchBox.addEventListener(
+  "input",
+  function () {
 
-  let found = 0;
+    const search =
+      searchBox.value
+        .toLowerCase()
+        .trim();
 
-  cards.forEach(card => {
 
-    const text =
-      card.textContent.toLowerCase();
+    let found = 0;
 
-    if (text.includes(search)) {
 
-      card.style.display = "";
+    cards.forEach(function (card) {
 
-      found++;
+      const text =
+        card.textContent.toLowerCase();
+
+
+      if (text.includes(search)) {
+
+        card.style.display = "";
+
+        found++;
+
+      } else {
+
+        card.style.display = "none";
+
+      }
+
+    });
+
+
+    const result =
+      document.getElementById(
+        "searchResult"
+      );
+
+
+    if (search === "") {
+
+      result.textContent = "";
 
     } else {
 
-      card.style.display = "none";
+      result.textContent =
+        found +
+        " result(s) found.";
 
     }
 
-  });
-
-  const result =
-    document.getElementById("searchResult");
-
-  if (search === "") {
-
-    result.textContent = "";
-
-  } else {
-
-    result.textContent =
-      found + " result(s) found.";
-
   }
+);
 
-});
 
-
-/* MESSAGE */
+/* ================= MESSAGE ================= */
 
 function showMessage(message) {
 
   const box =
-    document.getElementById("messageBox");
+    document.getElementById(
+      "messageBox"
+    );
 
   const text =
-    document.getElementById("messageText");
+    document.getElementById(
+      "messageText"
+    );
+
 
   text.textContent = message;
 
   box.classList.add("show");
 
-  setTimeout(() => {
+
+  setTimeout(function () {
 
     box.classList.remove("show");
 
-  },3000);
+  }, 3000);
 
 }
 
@@ -121,7 +151,7 @@ function closeMessage() {
 }
 
 
-/* PREVIOUS YEARS */
+/* ================= PREVIOUS YEARS ================= */
 
 function selectYear(year) {
 
@@ -130,12 +160,12 @@ function selectYear(year) {
     .textContent =
       "You selected " +
       year +
-      ". Open the relevant official examination resource above.";
+      ". More resources can be added here.";
 
 }
 
 
-/* CURRENT YEAR */
+/* ================= CURRENT YEAR ================= */
 
 document
   .getElementById("year")
@@ -143,29 +173,34 @@ document
     new Date().getFullYear();
 
 
-/* NAVIGATION */
+/* ================= NAVIGATION ================= */
 
 document
   .querySelectorAll("nav a")
-  .forEach(link => {
+  .forEach(function (link) {
 
-    link.addEventListener("click", event => {
+    link.addEventListener(
+      "click",
+      function (event) {
 
-      event.preventDefault();
+        event.preventDefault();
 
-      const target =
-        document.querySelector(
-          link.getAttribute("href")
-        );
 
-      if (target) {
+        const target =
+          document.querySelector(
+            link.getAttribute("href")
+          );
 
-        target.scrollIntoView({
-          behavior: "smooth"
-        });
+
+        if (target) {
+
+          target.scrollIntoView({
+            behavior: "smooth"
+          });
+
+        }
 
       }
-
-    });
+    );
 
   });
